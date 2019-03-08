@@ -1,6 +1,6 @@
 ---
 title: DNS EDNS Tags
-docname: draft-bellis-dnsop-edns-tags-00
+docname: draft-bellis-dnsop-edns-tags-01
 
 ipr: trust200902
 area: Internet
@@ -82,6 +82,10 @@ fit; for example it could be used to transmit up to 16 separate boolean
 flags, or perhaps to transmit a 10 bit numeric value combined a 2 bit
 value and four boolean flags.
 
+The intended mode of operation is that the value of a bit (or range of
+bits) could be tested in access control lists or any other such policy
+control mechanism.
+
 Possible use cases for EDNS-Client-Tags include:
 
 - client-controlled selection of a DNS-based security filter
@@ -159,7 +163,7 @@ Client tags are under the control of the client software and as such
 (and in the absence of any other mechanism to authenticate the client's
 identity) this mechanism is not appropriate for applications where the
 DNS server operator wishes to contractually differentiate service based
-on the presence (or absence) of any particular tag.
+on the interpretation of the tag's value.
 
 # Implementation status {#impstatus}
 
