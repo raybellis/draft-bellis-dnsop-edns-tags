@@ -37,6 +37,17 @@ author:
     country: USA
     phone: +1 650 423 1200
     email: aclegg@isc.org
+  -
+    ins: P. van Dijk
+    name: Peter van Dijk
+    org: PowerDNS.COM B.V.
+    abbrev: PowerDNS
+    street: ''
+    city: Den Haag
+    code: ''
+    country: The Netherlands
+    phone: ''
+    email: peter.van.dijk@powerdns.com
 
 --- abstract
 
