@@ -73,9 +73,8 @@ capitals, as shown here.
 
 The values of the individual bits within a tag are not defined to have
 any semantic meaning in this specification.  Their interpretation is
-defined entirely by bi-lateral agreement between client and server
-operators.  The definitions for EDNS-Client-Tag and EDNS-Server-Tag
-values MAY be different.
+defined entirely by out-of-band bilateral agreement between client and
+server operators.
 
 Operators are free to partition the bits within that field as they see
 fit; for example it could be used to transmit up to 16 separate boolean
@@ -90,11 +89,13 @@ Possible use cases for EDNS-Client-Tags include:
 
 - client-controlled selection of a DNS-based security filter
 
-- marking a packet passing through a proxy with transport-related information
+- marking a packet passing through a proxy with transport-related
+information
 
 Use cases for EDNS-Server-Tags are still to be determined. The option is
 specified here for symmetry and in anticipation of new use cases being
-discovered.
+discovered.  The semantic definitions for EDNS-Client-Tag and
+EDNS-Server-Tag values MAY be different; they need not be symmetrical.
 
 ## Packet Validation Rules
 
